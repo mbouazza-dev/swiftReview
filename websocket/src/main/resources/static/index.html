@@ -7,6 +7,15 @@
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 </head>
 <body>
+<script>SEC_HTTPS = true;
+SEC_BASE = "compilers.widgets.sphere-engine.com";
+(function(d, s, id){ SEC = window.SEC || (window.SEC = []);
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return; js = d.createElement(s); js.id = id;
+  js.src = (SEC_HTTPS ? "https" : "http") + "://" + SEC_BASE + "/static/sdk/sdk.js";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, "script", "sphere-engine-compilers-jssdk"));
+</script>
 <noscript>
     <h2>Sorry! Your browser doesn't support Javascript</h2>
 </noscript>
@@ -44,6 +53,9 @@
                 </div>
             </div>
         </form>
+    </div>
+    <div class="compiler">
+        <div class="sec-widget" data-widget="9e1e25c224b32a941cccc468d284e148"></div>
     </div>
 </div>
 
